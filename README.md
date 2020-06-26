@@ -10,6 +10,9 @@ using the (haploid) sperm cells.
 The inference of recombination breakpoints from SC involves three steps:
 
 1) generating input files (GT output files from vcftools)
+   - retrieving common sites between bulk vcf and single cell vcfs and extracting such sites from the SC vcf with: merging_SCvcf_hetSNPs.bash
+   - removing sites falling into regions of low mapping quality and keepign accessible regions of the genome with: subsetting_chr_extracting.bash.
+   - this last script also splits chromosomes (chromosomes: 1-7) into short and long arms.
 
 2) running the phasing of parental chromosomes from the multiple SCs (longest part)
 
