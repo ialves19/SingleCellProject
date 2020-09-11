@@ -603,7 +603,7 @@ legend("topleft", legend = chrTag, bty = "n", cex = 1.5)
 dev.off()
 ##------------
 #--------
-pdf(file = paste0("recombRates_SNPDensity_chr", chrTag, "_2.pdf"), width = 11, height = 4)
+pdf(file = paste0("recombRates_SNPDensity_", chrTag, ".pdf"), width = 11, height = 4)
 par(mfrow=c(1,1), mar=c(5,4,2,2))
 ##----------
 # set up the plot 
